@@ -1,12 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-Tienda de Skin Maker para league of legends.
-estuve buscando API de league of legends pero me tiraba error.
+Welcome to Caffé Maledetto
+Aqui tendras una pequeña lista de cafe nacional, internacional y opciones de venta de vajilla.
+Separa por categoria y vuelve al inicio
