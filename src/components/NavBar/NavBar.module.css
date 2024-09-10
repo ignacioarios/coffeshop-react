@@ -1,0 +1,38 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #14111c;
+    border-bottom: 1px solid var(--lighter-color);
+}
+
+.navbarLogo {
+    height: 5rem;
+    width: 250px;
+}
+
+.navLinks {
+    display: flex;
+    gap: var(--nav-button-spacing);
+    background-color: #14111c;
+}
+
+.navLink {
+    color: var(--lightest-color);
+    text-decoration: none;
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    transition: background-color var(--btn-transition);
+}
+
+.navLink:hover {
+    background-color: var(--accent-color);
+}
+
+.active {
+    color: var(--lightest-color);
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid var(--accent-color);
+}

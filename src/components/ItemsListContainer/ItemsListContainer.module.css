@@ -1,0 +1,15 @@
+.uiContainer {
+    width: var(--container-max-width);
+    margin: var(--container-margin);
+    border-radius: var(--border-radius);
+    background-color: #1b1a1e;
+    border: 0.1rem solid var(--lighter-color);
+    padding: var(--padding-standard);
+}
+
+.greeting {
+    font-size: 1.8rem;
+    color: var(--lightest-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+.card {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    padding: var(--padding-standard);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: calc(33.33% - 2rem);
+    max-width: 300px;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card img {
+    width: var(--img-width);
+    height: var(--img-height-auto);
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--lightest-color);
+    margin-top: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.itemPriceDisplay {
+    font-size: 1.1rem;
+    color: var(--lightest-color);
+    margin: 0.5rem 0;
+}
+
+.itemFooter {
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--lightest-color);
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--btn-transition);
+    text-align: center;
+    text-decoration: none;
+    margin: var(--button-margin);
+    width: calc(100% - 2 * var(--button-margin));
+}
+
+.button:hover {
+    background-color: var(--lighter-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

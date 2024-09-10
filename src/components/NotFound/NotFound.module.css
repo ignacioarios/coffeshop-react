@@ -1,0 +1,6 @@
+.notFoundContainer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    color: var(--lightest-color);
+}

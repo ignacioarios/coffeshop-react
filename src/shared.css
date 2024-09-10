@@ -1,0 +1,69 @@
+:root {
+    font-style:normal;
+    --primary-bg-color: #1a1625;
+    --secondary-bg-color: #3d2111;
+    --dark-secondary-color: #3d2111;
+    --accent-color: #4b301a;
+    --lighter-color: #76737e;
+    --primary-text-color: #c5c5c5;
+    --text-color: var(--primary-text-color);
+    --border-radius: 0.5rem;
+    --lightest-color: rgb(255, 255, 255);
+    --font-size: 16px;
+    --line-height: 1.6;
+    --container-width: 99%;
+    --container-max-width: 80%;
+    --container-margin: 1rem auto;
+    --padding-standard: 0.5rem;
+    --margin-standard: 1rem 0;
+    --margin-large: 2rem auto;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --btn-padding: 0.5rem 1rem;
+    --btn-transition: background-color 0.3s ease;
+    --img-width: 100%;
+    --img-height-auto: auto;
+    --cart-color: rgb(255, 255, 255);
+    --nav-button-spacing: 1.5rem;
+    --button-margin: 5px;
+    --count-button-padding: 0.3rem 0.6rem;
+    --count-display-font-size: 1rem;
+}
+
+* {
+    color: var(--text-color);
+    background-color: var(black);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: var(--line-height);
+}
+
+.ui-container {
+    width: var(--container-max-width);
+    margin: var(--container-margin);
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    background-color: var(--dark-secondary-color);
+    border: 0.1rem solid var(--lighter-color);
+    padding: var(--padding-standard);
+}
+
+
+.nav-link.active {
+    color: var(--lightest-color);
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(139, 52, 2, 0.726);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+
+
+nav, main {
+    padding: 20px;
+}
