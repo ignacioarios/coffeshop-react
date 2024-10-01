@@ -23,7 +23,7 @@ export function AppRouter() {
         <Route
           path="/"
           element={
-            <ItemsListContainer greeting="¡Bienvenidos a Caffè maledetto ! Aquí están todos nuestros productos." />
+            <ItemsListContainer greeting="¡Bienvenidos a Caffè Maledetto ! Aquí están todos nuestros productos." />
           }
         />
         <Route path="/category/:categoryId" element={<CategoryItemsList />} />
