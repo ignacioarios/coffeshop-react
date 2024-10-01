@@ -10,6 +10,18 @@ export default defineConfig({
   },
   build: {
     sourcemap: true, 
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Dividir en chunks basados en el nombre del módulo
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('firebase')) {
+              return 'vendor'; // Crea un chunk llamado vendor para estas librerías
+            }
+          }
+        },
+      },
+    },
   },
   css: {
     modules: {
