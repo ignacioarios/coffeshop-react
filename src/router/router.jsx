@@ -1,4 +1,3 @@
-
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route, useParams } from 'react-router-dom';
 import { ItemsListContainer } from '../components/ItemsListContainer/ItemsListContainer';
@@ -24,7 +23,7 @@ export function AppRouter() {
         <Route
           path="/"
           element={
-            <ItemsListContainer greeting="¡Bienvenido a Caffe Maledetto! Aquí encontraras todos nuestros productos:" />
+            <ItemsListContainer greeting="¡Bienvenidos! Aquí están todos nuestros productos." />
           }
         />
         <Route path="/category/:categoryId" element={<CategoryItemsList />} />
@@ -42,3 +41,4 @@ function CategoryItemsList() {
   const greeting = categoryGreetings[categoryId] || categoryGreetings.default;
   return <ItemsListContainer greeting={greeting} />;
 }
+

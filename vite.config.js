@@ -5,12 +5,15 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': '/src',  // This alias is correct and simplifies imports.
+      '@': '/src', 
     },
+  },
+  build: {
+    sourcemap: true, 
   },
   css: {
     modules: {
-      localsConvention: 'camelCase',  // This is also fine for CSS modules.
+      localsConvention: 'camelCase',  
     },
   },
 });
