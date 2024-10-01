@@ -5,7 +5,6 @@ Este es un proyecto de e-commerce desarrollado con React, creado utilizando Vite
 ## Características principales
 
 -   **Vite JS**: Creación y configuración rápida del proyecto.
--   **Bootstrap**: Framework de CSS para un diseño receptivo y moderno.
 -   **Módulos CSS**: Estilos encapsulados y organizados por componente.
 -   **React Cookies**: Gestión de cookies para manejar sesiones o preferencias de usuario.
 -   **React Router**: Navegación entre distintas vistas de la aplicación.
@@ -31,7 +30,6 @@ Este es un proyecto de e-commerce desarrollado con React, creado utilizando Vite
 
 -   **React**: Librería principal para la construcción de la interfaz de usuario.
 -   **Vite**: Herramienta para empaquetado y configuración rápida del proyecto.
--   **Bootstrap**: Framework para diseño responsivo y adaptable.
 -   **CSS Modules**: Manejo de estilos CSS locales a cada componente.
 -   **React Cookies**: Para el manejo de sesiones y preferencias de usuario mediante cookies.
 -   **React Router**: Para la navegación de las diferentes vistas de la aplicación.
