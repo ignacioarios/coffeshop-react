@@ -1,5 +1,5 @@
 :root {
-    font-style:normal;
+    font-style: normal;
     --primary-bg-color: #1a1625;
     --secondary-bg-color: #37251b;
     --dark-secondary-color: #000000;
@@ -64,6 +64,59 @@ body {
 
 
 
-nav, main {
+nav,
+main {
     padding: 20px;
+}
+
+footer.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    background-color: #000 !important;
+   
+    color: #fff !important;
+ 
+    padding: 3px !important;
+    
+    text-align: center !important;
+ 
+}
+
+.footer h3,
+.footer h4,
+.footer p {
+    margin: 10px 0 !important;
+}
+
+.social-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 10px 0 !important;
+}
+
+.social-links li {
+    display: inline-block !important;
+    margin: 0 10px !important;
+}
+
+.social-links a {
+    color: #1f44bf !important;
+    text-decoration: none !important;
+}
+
+.social-links a:hover {
+    text-decoration: underline !important;
+}
+
+footer.footer {
+    background-color: #000;
+    color: #fff;
+
+    .secundaryy {
+        background-color: #1a1625;
+
+    }
 }

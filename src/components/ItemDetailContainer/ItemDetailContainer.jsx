@@ -1,19 +1,35 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { fetchAPI } from '../../services/apiService';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
-import { getSingleProduct } from '../../firebase/db';
+import { ErrorMessage } from '../ErrorMessage/ErrorMessage';
 
-export function ItemDetailContainer() {
-    const [product, setProduct] = useState(null);
-    const { itemId } = useParams();
+export default function ItemDetailContainer() {
+  const [product, setProduct] = useState(null);
+  const [status, setStatus] = useState('loading');
+  const { itemId } = useParams();
 
-    useEffect(() => {
-        getSingleProduct(itemId, setProduct)
-    }, [itemId]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetchAPI({ productId: itemId });
+      if (result.fail) {
+        setStatus('fail');
+      } else {
+        setProduct(result);
+        setStatus('success');
+      }
+    };
 
-    return (
-        <div className="ui-container">
-            {product ? <ItemDetail {...product} /> : <p>Cargando..</p>}
-        </div>
-    );
+    fetchData();
+  }, [itemId]);
+
+  return status === 'loading' ? (
+    <p>Cargando...</p>
+  ) : status === 'fail' ? (
+    <ErrorMessage />
+  ) : (
+    <div className="ui-container">
+      <ItemDetail {...product} />
+    </div>
+  );
 }
