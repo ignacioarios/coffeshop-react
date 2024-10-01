@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #14111c;
+    background-color: #000000;
     border-bottom: 1px solid var(--lighter-color);
 }
 
@@ -15,7 +15,7 @@
 .navLinks {
     display: flex;
     gap: var(--nav-button-spacing);
-    background-color: #14111c;
+    background-color: #000000;
 }
 
 .navLink {

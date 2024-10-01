@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 import styles from './NavBar.module.css';
-const logo = "./cafelogo.png"; 
+const logo = "https://i.pinimg.com/originals/74/26/cf/7426cf05ffe331b889b1459cd0005054.png"; 
 
 export function NavBar() {
     return (

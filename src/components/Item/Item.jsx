@@ -7,7 +7,7 @@ export function Item({ id, name, description, price, imageUrl }) {
             <img src={imageUrl} alt={name} />
             <h2>{name}</h2>
             <p>{description}</p>
-            <span className={styles.itemPriceDisplay}>USD$: {price}</span>
+            <span className={styles.itemPriceDisplay}>$ {price}</span>
             <div className={styles.itemFooter}>
                     <Link to={`/item/${id}`} className={styles.button}>Comprar</Link>
             </div>

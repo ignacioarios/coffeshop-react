@@ -2,7 +2,7 @@
     width: var(--container-max-width);
     margin: var(--container-margin);
     border-radius: var(--border-radius);
-    background-color: #1b1a1e;
+    background-color: #000000;
     border: 0.1rem solid var(--lighter-color);
     padding: var(--padding-standard);
 }

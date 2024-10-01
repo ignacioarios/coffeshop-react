@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchAPI } from '../../services/apiService'; 
 import { ItemDetail } from '../ItemDetail/ItemDetail';
+import { getSingleProduct } from '../../firebase/db';
 
 export function ItemDetailContainer() {
     const [product, setProduct] = useState(null);
     const { itemId } = useParams();
 
     useEffect(() => {
-        fetchAPI({ productId: itemId })
-            .then(setProduct)
-            .catch(console.error);
+        getSingleProduct(itemId, setProduct)
     }, [itemId]);
 
     return (

@@ -3,15 +3,16 @@ import { useParams } from 'react-router-dom';
 import { fetchAPI } from '../../services/apiService';
 import { ItemList } from '../ItemList/ItemList';
 import styles from './ItemsListContainer.module.css';
+import { getProducts } from '../../firebase/db';
 
 export function ItemsListContainer({ greeting }) {
     const [products, setProducts] = useState([]);
     const { categoryId } = useParams();
 
     useEffect(() => {
-        fetchAPI({ categoryId })
-            .then(setProducts)
-            .catch(error => console.error('Failed to fetch products:', error));
+        getProducts(setProducts)
+
+
     }, [categoryId]);
 
     return (

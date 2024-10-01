@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import styles from './ItemCount.module.css';
+import {useCartContext} from "../../context/cartContext"
 
-export function ItemCount({ stock, initial, onAdd, productId }) {
+export function ItemCount({ stock, initial, onAdd, productId, prod }) {
      const [count, setCount] = useState(initial);
+     const {addToCart} = useCartContext()
+
 
      useEffect(() => {
           const savedCount = localStorage.getItem(`itemCount-${productId}`);
@@ -12,7 +15,7 @@ export function ItemCount({ stock, initial, onAdd, productId }) {
      }, [productId]);
 
      useEffect(() => {
-          localStorage.setItem(`itemCount-${productId}`, count);
+          localStorage.setProducts(`itemCount-${productId}`, count);
      }, [count, productId]);
 
      const increaseCount = () => {
@@ -32,7 +35,7 @@ export function ItemCount({ stock, initial, onAdd, productId }) {
                </div>
                <button
                     className={`${styles.button} ${styles.addToCartButton}`}
-                    onClick={() => onAdd(count)}
+                    onClick={() => addToCart({...prod, quantity: count})}
                     disabled={count === 0}
                >
                     Agregar al carrito

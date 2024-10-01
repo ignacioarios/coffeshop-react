@@ -13,7 +13,7 @@ export function ItemDetail({ id, name, description, price, imageUrl, stock }) {
                <p>{description}</p>
                <span className={styles.itemPriceDisplay}>Precio: {price}</span>
                <p className={styles.itemStock}>Stock disponible: {Math.floor(stock)}</p>
-               <ItemCount stock={Math.floor(stock)} initial={1} onAdd={handleAdd} productId={id} />
+               <ItemCount stock={Math.floor(stock)} initial={1} onAdd={handleAdd} productId={id} prod = {ItemDetail} />
           </div>
      );
 }
