@@ -5,6 +5,7 @@ import { fetchAPI, updateProductStock } from '../../services/apiService';
 import styles from './Cart.module.css';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function Cart() {
   const { cart, emptyCart, updateQuantity, removeItem } = useContext(CartContext);
   const [stockInfo, setStockInfo] = useState({});
