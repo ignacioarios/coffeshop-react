@@ -3,6 +3,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { AppRouter } from './router/router';
 import { CartProvider } from './context/CartContext';
 import './shared.css';
+import Footer from './components/Footer/Footer';
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
           <NavBar />
           <AppRouter />
         </BrowserRouter>
+        <Footer />
       </CartProvider>
     </div>
   );
